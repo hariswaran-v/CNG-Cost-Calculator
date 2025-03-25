@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNG | Caluculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assest/css/style.css" />
+  </head>
+  <body class="bg-gradient-to-r from-purple-500 to-red-500">
+    <div
+      class="bg-zinc-800 sm:bg-white p-10 max-w-lg mx-auto mt-10 rounded shadow-xl"
+    >
+      <div class="text-center">
+        <h1 class="font-bold text-red-500">CNG Cost Calculator</h1>
+        <p class="text-gray-200 sm:text-gray-600 mt-2 text-sm">
+          Simple tool to calculate the cost.
+        </p>
+      </div>
+      <form class="mt-5 space-y-4">
+        <div>
+          <label
+            for="trip-distance"
+            class="font-semibold text-sm text-white sm:text-black"
+            >Trip Distance <span class="text-red-500 font-bold">*</span></label
+          >
+          <input
+            id="trip-distance"
+            type="number"
+            placeholder="Trip Distance"
+            class="bg-gray-200 px-4 py-2 rounded outline-none w-full mt-2"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="fuel-effi"
+            class="font-semibold text-sm text-white sm:text-black"
+            >Fuel Efficiency
+            <span class="text-red-500 font-bold">*</span></label
+          >
+          <input
+            id="fuel-effi"
+            type="number"
+            placeholder="Fuel Efficiency"
+            class="bg-gray-200 px-4 py-2 rounded outline-none w-full mt-2"
+            value="24"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="fuel-cost"
+            class="font-semibold text-sm text-white sm:text-black"
+            >Fuel Cost <span class="text-red-500 font-bold">*</span></label
+          >
+          <input
+            id="fuel-cost"
+            type="number"
+            placeholder="Fuel Cost"
+            class="bg-gray-200 px-4 py-2 rounded outline-none w-full mt-2"
+            value="84"
+            required
+          />
+        </div>
+        <div>
+          <button
+            class="bg-red-500 text-white py-2 rounded font-semibold mt-5 w-full"
+          >
+            Calculate
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
